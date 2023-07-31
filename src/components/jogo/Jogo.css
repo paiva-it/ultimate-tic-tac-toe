@@ -1,0 +1,71 @@
+.around-jogo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.jogo {
+	width: 99vh;
+	height: 99vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.info-jogo {
+	box-sizing: border-box;
+	width: 40vh;
+	height: 98vh;
+	padding: 2vh 1.5vh;
+	border-radius: 1vh;
+	margin-left: 0.5vh;
+	display: flex;
+	flex-direction: column;
+	background: #001b33;
+}
+
+.info-titulo {
+	font-size: 3vh;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 1vh;
+}
+
+.info-jogador {
+	font-size: 2vh;
+	color: white;
+	margin-bottom: 0.5vh;
+}
+
+.info-novo-jogo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	margin-top: 3vh;
+	width: 12vh;
+	padding: 1vh 2vh;
+	border-radius: 1vh;
+	font-size: 1.5vh;
+	font-weight: bold;
+	color: white;
+	background: #0099ff;
+	transition: background 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.info-novo-jogo:hover {
+	background: #00538a;
+}
+
+.vitoria {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 3vh 4vh;
+	border-radius: 1vh;
+	background: #001b33;
+}

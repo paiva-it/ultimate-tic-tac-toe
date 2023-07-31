@@ -1,0 +1,67 @@
+.quadrado {
+	background-color: #001b33;
+	width: 10vh;
+	height: 10vh;
+	border-radius: 0.5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.quadrado-permitido {
+	background-color: #2d506f;
+}
+
+.quadrado-empatado {
+	background: #444444;
+}
+
+.quadrado-bloqueado {
+	cursor: not-allowed;
+}
+
+.quadrado-vitoria-p1 {
+	background-color: #00538a;
+}
+
+.quadrado-vitoria-p2 {
+	background-color: #690000;
+}
+
+.cruz,
+.circulo {
+	position: relative;
+	width: 6vh;
+	height: 6vh;
+}
+
+.cruz:before,
+.cruz:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1vh;
+	height: 8vh;
+	background-color: #ff0000;
+}
+
+.cruz:before {
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.cruz:after {
+	transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+.circulo {
+	border: 1vh solid #0099ff;
+	border-radius: 50%;
+}
+
+.quadrado:not(.quadrado-bloqueado):hover {
+	opacity: 0.8;
+}
